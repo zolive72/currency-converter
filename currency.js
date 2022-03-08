@@ -12,7 +12,7 @@ const getFetchData = async (baseCurrency = "USD") => {
 
     const { conversion_rates } = await response.json();
 
-    return conversion_rates
+    return conversion_rates;
   } catch (error) {
     alert(`Um erro aconteceu: %c${error.message}`);
   }
